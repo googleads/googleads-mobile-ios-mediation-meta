@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 
 // Copyright 2025 Google LLC.
 //
@@ -18,11 +18,17 @@ import PackageDescription
 
 let package = Package(
   name: "MetaAdapter",
-  platforms: [.iOS(.v12)],
+  platforms: [.iOS(.v13)],
   products: [
     .library(
       name: "MetaAdapterTarget",
-      targets: ["MetaAdapterTarget", "FBAudienceNetwork"]
+      targets: ["MetaAdapterTarget"]
+    )
+  ],
+  dependencies: [
+    .package(
+      url: "https://github.com/facebook/FBAudienceNetwork.git",
+      exact: "6.21.0"
     )
   ],
   targets: [
@@ -30,6 +36,7 @@ let package = Package(
       name: "MetaAdapterTarget",
       dependencies: [
         .target(name: "MetaAdapter"),
+        .product(name: "FBAudienceNetwork", package: "FBAudienceNetwork"),
       ],
       path: "MetaAdapterTarget",
       linkerSettings: [
@@ -39,13 +46,8 @@ let package = Package(
     .binaryTarget(
       name: "MetaAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.20.1.0.zip",
-      checksum: "3d1a8ca528d87aadf2124d46425848702c3194a71e9b738c452a84806bbae58a"
-    ),
-    .binaryTarget(
-      name: "FBAudienceNetwork",
-      url: "https://developers.facebook.com/resources/FBAudienceNetwork-6.20.1.zip",
-      checksum: "7e6560c585a8f224643500e89e053b909793a266ec483384d4c98215f0e870e4"
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.21.0.0.zip",
+      checksum: "d4ab15637fab691c2eb7cd8152c319037200af911d63c25060c6f28e8e6361e0"
     ),
   ]
 )
