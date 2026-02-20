@@ -32,7 +32,7 @@ let package = Package(
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-      from: "12.0.0"
+      from: "13.0.0"
     ),
   ],
   targets: [
@@ -51,8 +51,8 @@ let package = Package(
     .binaryTarget(
       name: "MetaAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.21.0.0.zip",
-      checksum: "d4ab15637fab691c2eb7cd8152c319037200af911d63c25060c6f28e8e6361e0"
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.21.0.2.zip",
+      checksum: "8ebeab9d67709d16cea50e842d8f52f065906fbaa4bd7a3edc19364476e74160"
     ),
   ]
 )
