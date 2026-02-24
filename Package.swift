@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/facebook/FBAudienceNetwork.git",
-      exact: "6.21.0"
+      exact: "6.21.1"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -51,7 +51,7 @@ let package = Package(
     .binaryTarget(
       name: "MetaAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.21.0.2.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.21.1.0.zip",
       checksum: "8ebeab9d67709d16cea50e842d8f52f065906fbaa4bd7a3edc19364476e74160"
     ),
   ]
