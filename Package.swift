@@ -51,7 +51,7 @@ let package = Package(
     .binaryTarget(
       name: "MetaAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.21.1.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.21.1.1.zip",
       checksum: "33161d047091d71898da8ccef188748535b31a90e9b5c0d53d1b63d25fd9201a"
     ),
   ]
