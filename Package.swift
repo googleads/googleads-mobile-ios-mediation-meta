@@ -52,7 +52,7 @@ let package = Package(
       name: "MetaAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/meta/MetaAdapter-6.22.1.0.zip",
-      checksum: "f329ea5ceb98cd86f8517b16c5b66e8654799efc4127ecd34595c0eabe3b9bda"
+      checksum: "2e4d7f610aaf9461b4a06b73dd73b8bd4828989a7b96c7468475aeaf102ce177"
     ),
   ]
 )
